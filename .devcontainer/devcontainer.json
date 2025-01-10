@@ -1,6 +1,9 @@
 {
     "name": "AzurePipelines",
     "dockerFile": "Dockerfile",
+    "image": "mcr.microsoft.com/devcontainers/dotnet:6.0.428",
+  "postCreateCommand": "dotnet --info",
+  "updateContentCommand": "dotnet restore",
 
     // Configure tool-specific properties.
     "customizations": {
@@ -40,9 +43,4 @@
         "github-cli": "latest",
         "powershell": "latest"
     }
-}
-{
-  "image": "mcr.microsoft.com/devcontainers/dotnet:6.0.428",
-  "postCreateCommand": "dotnet --info",
-  "updateContentCommand": "dotnet restore"
 }
