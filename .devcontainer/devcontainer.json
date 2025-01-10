@@ -41,3 +41,8 @@
         "powershell": "latest"
     }
 }
+{
+  "image": "mcr.microsoft.com/devcontainers/dotnet:6.0.428",
+  "postCreateCommand": "dotnet --info",
+  "updateContentCommand": "dotnet restore"
+}
